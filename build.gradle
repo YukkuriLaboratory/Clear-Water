@@ -89,7 +89,7 @@ allprojects {
 
     repositories {
         maven { url "https://maven.terraformersmc.com" }
-        maven { url "https://nexus.resourcefulbees.com/repository/maven-public/" }
+        maven { url "https://maven.resourcefulbees.com/repository/maven-public/" }
         maven { url "https://maven.isxander.dev/releases" }
     }
 

@@ -30,8 +30,8 @@
     "clearwater.mixins.json"
   ],
   "depends": {
-    "fabricloader": ">=0.14.10",
-    "minecraft": ">=1.19.2",
-    "resourcefulconfig": ">=1.0.18"
+    "fabricloader": "${loaderVersion}",
+    "minecraft": ">=${mcVersion}",
+    "resourcefulconfig": ">=${resourcefulconfigVersion}"
   }
 }

@@ -20,7 +20,7 @@ dependencies {
     modApi "net.fabricmc.fabric-api:fabric-api:${rootProject.fabric_api_version}"
 
     modApi("com.terraformersmc:modmenu:$rootProject.modmenu_version")
-    modImplementation("com.teamresourceful.resourcefulconfig:resourcefulconfig-fabric-${rootProject.minecraft_version}:${rootProject.resourceful_config_version}")
+    modImplementation("com.teamresourceful.resourcefulconfig:resourcefulconfig-fabric-1.20:${rootProject.resourceful_config_version}")
 
     common(project(path: ":common", configuration: "namedElements")) { transitive false }
     shadowCommon(project(path: ":common", configuration: "transformProductionFabric")) { transitive false }
@@ -31,6 +31,9 @@ processResources {
 
     filesMatching("fabric.mod.json") {
         expand "version": project.version
+        expand "loaderVersion": project.fabric_loader_version
+        expand "mcVersion": project.minecraft_version
+        expand "resourcefulconfigVersion": project.resourceful_config_version
     }
 }
 
